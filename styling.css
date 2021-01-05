@@ -204,7 +204,7 @@ input[type="email"] {
 
 button[type="submit"] {
     height:45px;
-    width: 80px;
+    width: 90px;
     font-size: large;
     border-color: white;
     color: white;
@@ -287,8 +287,8 @@ footer {
         top: 37.5%;
     }
 
-    form > button {
-        font-size: medium;
+    .description {
+        padding-bottom: 10px;
     }
 
     footer {
