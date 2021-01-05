@@ -136,15 +136,14 @@ span {
 /* main styling */
 
 .image-wrapper {
-    width: 40%;
+    width: 45%;
 }
 
 .image-wrapper > img {
     position: relative;
     display: block;
     bottom: 0;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 
 .image-content {
@@ -160,7 +159,6 @@ span {
 
 .description-wrapper {
     top: 45%;
-    left: 50%;
     margin: 0;
     text-align: center;
 }
@@ -284,9 +282,10 @@ footer {
     }
     .description-wrapper {
         position: fixed;
+        align-content: center;
         margin: 10px;
-        top: 37.5%;
         left: 0;
+        top: 37.5%;
     }
     footer {
         position: fixed;
@@ -314,67 +313,68 @@ footer {
         display: block;
     }
     .circle-me {
+        align-content: center;
         display: flex;
         justify-content: center;
     }
 }
 
-@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
-    .image-wrapper {
-        width: 52%;
-    }
-    .description-wrapper {
-        left: 0;
-    }
-    footer {
-        position: fixed;
-        bottom:0;
-    }
-    .links-wrapper > a > img {
-        height: 30px;
-    }
-    .footer-message> h1 {
-        font-size: medium;
-    }
-}
+/*@media all and (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {*/
+/*    .image-wrapper {*/
+/*        width: 52%;*/
+/*    }*/
+/*    .description-wrapper {*/
+/*        left: 0;*/
+/*    }*/
+/*    footer {*/
+/*        position: fixed;*/
+/*        bottom:0;*/
+/*    }*/
+/*    .links-wrapper > a > img {*/
+/*        height: 30px;*/
+/*    }*/
+/*    .footer-message> h1 {*/
+/*        font-size: medium;*/
+/*    }*/
+/*}*/
 
-@media all and (max-width: 1112px) and (max-height: 834px) and (orientation: landscape) {
-    .image-wrapper {
-        width: 52%;
-    }
-    .description-wrapper {
-        left: 0;
-    }
-    footer {
-        position: fixed;
-        bottom:0;
-    }
-    .links-wrapper > a > img {
-        height: 30px;
-    }
-    .footer-message> h1 {
-        font-size: medium;
-    }
-}
+/*@media all and (max-width: 1112px) and (max-height: 834px) and (orientation: landscape) {*/
+/*    .image-wrapper {*/
+/*        width: 52%;*/
+/*    }*/
+/*    .description-wrapper {*/
+/*        left: 0;*/
+/*    }*/
+/*    footer {*/
+/*        position: fixed;*/
+/*        bottom:0;*/
+/*    }*/
+/*    .links-wrapper > a > img {*/
+/*        height: 30px;*/
+/*    }*/
+/*    .footer-message> h1 {*/
+/*        font-size: medium;*/
+/*    }*/
+/*}*/
 
-@media all and (max-width: 1366px) and (min-height: 1024px) and (orientation: landscape) {
-    .image-wrapper {
-        width: 52%;
-    }
-    .description-wrapper {
-        left: 0;
-    }
-    footer {
-        position: fixed;
-        bottom:0;
-    }
-    .links-wrapper > a > img {
-        height: 30px;
-    }
-    .footer-message> h1 {
-        font-size: medium;
-    }
-}
+/*@media all and (max-width: 1366px) and (min-height: 1024px) and (orientation: landscape) {*/
+/*    .image-wrapper {*/
+/*        width: 52%;*/
+/*    }*/
+/*    .description-wrapper {*/
+/*        left: 0;*/
+/*    }*/
+/*    footer {*/
+/*        position: fixed;*/
+/*        bottom:0;*/
+/*    }*/
+/*    .links-wrapper > a > img {*/
+/*        height: 30px;*/
+/*    }*/
+/*    .footer-message> h1 {*/
+/*        font-size: medium;*/
+/*    }*/
+/*}*/
 
 @media all and (max-width: 375px) {
     .description > p {
@@ -384,56 +384,18 @@ footer {
 
 @media all and (max-width: 321px) {
     .description-wrapper {
-        position: static;
-        display: flex;
-        justify-content: center;
+        margin:auto;
+        position: fixed;
+        align-content: center;
+        top: 32.5%;
     }
+
+    .description {
+        padding-right: 10px;
+    }
+
     .circle-me > img {
-        height: 100px;
-    }
-    .circle-me {
-        padding-top: 120px;
-    }
-}
-
-/* iphone X , XS, 11 Pro, 12 Mini */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .image-wrapper > img {
-        display: none;
-    }
-    .image-wrapper {
-        display: none;
-    }
-    .description-wrapper {
-        position: fixed;
-        margin: 10px;
-        top: 37.5%;
-        left: 0;
-    }
-    footer {
-        position: fixed;
-        bottom: 0;
-    }
-    .links-wrapper > a > img {
-        height: 30px;
-    }
-    .footer-message> h1 {
-        font-size: medium;
-    }
-    .right-side > .links {
-        display: none;
-    }
-
-    .right-side > span {
-        display: block;
-    }
-
-    .left-side > span {
-        display: none;
-    }
-
-    .left-side > a {
-        display: block;
+        height: 120px;
     }
     .circle-me {
         display: flex;
