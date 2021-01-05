@@ -204,8 +204,8 @@ input[type="email"] {
 
 button[type="submit"] {
     height:45px;
-    width: 90px;
-    font-size: large;
+    width: 100px;
+    font-size: medium;
     border-color: white;
     color: white;
     font-family: "Oswald", sans-serif;
@@ -285,12 +285,8 @@ footer {
         margin: 5px;
         left: 0;
         top: 37.5%;
-    }
-
-    .description {
         padding-bottom: 10px;
     }
-
     footer {
         position: fixed;
         bottom: 0;
