@@ -235,7 +235,7 @@ footer {
         height: 30px;
     }
     .footer-message> h1 {
-        font-size: medium;
+        font-size: large;
     }
     .right-side > .links {
         display: none;
@@ -252,15 +252,24 @@ footer {
     .left-side > a {
         display: block;
     }
+    .content {
+        width: 95%;
+    }
 }
 
 @media all and (max-width: 375px) {
     .description > p {
-        font-size: medium;
+        font-size: large;
+    }
+    .content {
+        width: 95%;
     }
 
     .description > h1 {
         font-size: x-large;
+    }
+    .content {
+        width: 95%;
     }
 }
 
