@@ -281,12 +281,16 @@ footer {
         display: none;
     }
     .description-wrapper {
-        position: fixed;
         align-content: center;
         margin: 5px;
         left: 0;
         top: 37.5%;
     }
+
+    form > button {
+        font-size: medium;
+    }
+
     footer {
         position: fixed;
         bottom: 0;
@@ -385,7 +389,6 @@ footer {
 @media all and (max-width: 321px) {
     .description-wrapper {
         margin:auto;
-        position: fixed;
         align-content: center;
         top: 32.5%;
     }
