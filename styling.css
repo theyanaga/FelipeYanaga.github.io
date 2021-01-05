@@ -3,7 +3,7 @@
 html {
 }
 
-body {
+body{
     background: #404040;
     font-family: "Oswald", sans-serif;
     border: 0;
@@ -14,9 +14,15 @@ body {
     -moz-animation: fadein 1s; /* Firefox < 16 */
     -o-animation: fadein 1s; /* Opera < 12.1 */
     animation: fadein 1s;
+    overflow: no-display;
 }
 
-
+.flex-box {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 /* Nav styling */
 
@@ -136,30 +142,30 @@ span {
 /* main styling */
 
 .image-wrapper {
-    width: 45%;
+    align-items: center;
 }
 
 .image-wrapper > img {
-    position: relative;
-    display: block;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    width: 50vw;
 }
 
 .image-content {
+    margin-top: 8vh;
+    margin-bottom: 10vh;
     display: flex;
+    justify-content: space-evenly;
     background-image: radial-gradient(closest-side at 20% , #353535, #404040);
 }
 
 .content {
-    margin: auto;
-    vertical-align: center;
-    align-items: center;
+    margin:auto;
+    display: block;
+    align-self: center;
 }
 
 .description-wrapper {
-    top: 45%;
-    margin: 0;
+    margin-right: 15px;
     text-align: center;
 }
 
@@ -254,7 +260,7 @@ button[type="submit"]:hover {
 /* Footer */
 
 footer {
-    position: absolute;
+    /*position: absolute;*/
     text-align: center;
     background: black;
     width: 100%;
@@ -281,11 +287,9 @@ footer {
         display: none;
     }
     .description-wrapper {
+        position: relative;
         align-content: center;
         margin: 5px;
-        left: 0;
-        top: 37.5%;
-        padding-bottom: 30px;
     }
     footer {
         position: fixed;
@@ -382,19 +386,14 @@ footer {
     }
 }
 
-@media all and (max-width: 321px) {
+@media all and (max-width: 320px) {
     .description-wrapper {
-        margin:auto;
+        margin: auto;
         align-content: center;
-        top: 32.5%;
+        top: 27.5%;
     }
-
-    .description {
-        padding-right: 10px;
-    }
-
-    .circle-me > img {
-        height: 120px;
+    .content {
+        margin: auto;
     }
     .circle-me {
         display: flex;
@@ -402,14 +401,3 @@ footer {
     }
 }
 
-/* iphone 12, 12 Pro */
-@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (-webkit-device-pixel-ratio: 3) { }
-
-/* iphone XR, 11 */
-@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2) { }
-
-/* iphone XS Max, 11 Pro Max */
-@media only screen and (min-device-width : 414px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 3) { }
-
-/* iphone 12 Pro Max */
-@media only screen and (min-device-width : 428px) and (max-device-height : 926px) and (-webkit-device-pixel-ratio : 3) { }
