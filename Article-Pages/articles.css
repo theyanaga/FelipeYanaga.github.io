@@ -253,7 +253,7 @@ footer {
         display: block;
     }
     .content {
-        width: 95%;
+        width: 90%;
     }
 }
 
@@ -262,14 +262,11 @@ footer {
         font-size: large;
     }
     .content {
-        width: 95%;
+        width: 90%;
     }
 
     .description > h1 {
         font-size: x-large;
-    }
-    .content {
-        width: 95%;
     }
 }
 
@@ -279,5 +276,8 @@ footer {
     }
     .circle-me {
         padding-top: 120px;
+    }
+    .content {
+        width: 90%;
     }
 }
