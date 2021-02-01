@@ -121,6 +121,11 @@ Main Styling
 
  */
 
+.quote {
+    font-size: xx-large;
+    text-align: center;
+}
+
 main {
     background: white;
     font-family: 'Noto Sans JP', sans-serif;
@@ -130,7 +135,7 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: auto;
-    width: 60%;
+    width: 86%;
     color: black;
 }
 

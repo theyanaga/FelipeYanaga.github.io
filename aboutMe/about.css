@@ -287,3 +287,18 @@ main {
         width: 90%;
     }
 }
+
+/* Stuff for projects */
+
+.content > .calendar-project > a {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    border-bottom: 1px solid transparent;
+    transition: color, border;
+}
+
+.content > .calendar-project > a:hover {
+    color: #8a8a8a;
+    border-bottom: 1px solid black;
+}
