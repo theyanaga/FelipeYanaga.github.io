@@ -121,6 +121,11 @@ Main Styling
 
  */
 
+.quote {
+    font-size: xx-large;
+    text-align: center;
+}
+
 main {
     background: white;
     font-family: 'Noto Sans JP', sans-serif;
@@ -130,7 +135,7 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
     margin: auto;
-    width: 60%;
+    width: 86%;
     color: black;
 }
 
@@ -239,6 +244,9 @@ footer {
     .left-side > a {
         display: block;
     }
+    .content {
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 375px) {
@@ -249,6 +257,9 @@ footer {
     .description > h1 {
         font-size: x-large;
     }
+    .content {
+        width: 90%;
+    }
 }
 
 @media all and (max-width: 321px) {
@@ -257,5 +268,8 @@ footer {
     }
     .circle-me {
         padding-top: 120px;
+    }
+    .content {
+        width: 90%;
     }
 }
